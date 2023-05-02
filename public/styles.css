@@ -1,0 +1,22 @@
+html {
+  --primary: #1976d2;
+  --secondary: #9c27b0;
+}
+
+* {
+  background: red;
+}
+
+button {
+  cursor: pointer;
+  width: 120px;
+  height: 60px;
+  border-radius: 20px;
+}
+
+.container {
+  width: 400px;
+  height: 200px;
+  border: 1px solid black;
+  border-radius: 20px;
+}
