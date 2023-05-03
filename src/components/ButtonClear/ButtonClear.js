@@ -1,5 +1,7 @@
 import { Button } from '../Button';
 
-export const ButtonClear = () => {
-  return <Button type='button' label='Clear' className='btnClear' />;
-};
+export const ButtonClear = ({ type = 'button', className, ...props }) => (
+  <Button {...props} type={type} className={`${className || ''} btnClear`}>
+    Clear
+  </Button>
+);

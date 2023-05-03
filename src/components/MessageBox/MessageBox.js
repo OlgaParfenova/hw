@@ -2,6 +2,7 @@ import { MessageItem } from '../MessageItem';
 import React from 'react';
 
 export const MessageBox = ({ tasks }) => {
+  console.log(tasks);
   const elements = tasks.map((item) => {
     const { date, text, id } = item;
     return (
