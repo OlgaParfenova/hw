@@ -1,22 +1,95 @@
-html {
-  --primary: #1976d2;
-  --secondary: #9c27b0;
+* {
+  font-family: 'Comic Neue', cursive;
 }
 
-* {
-  background: red;
+.container {
+  width: 600px;
+  height: 500px;
+  border: 1px solid black;
+  border-radius: 20px;
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  padding: 20px;
 }
 
 button {
   cursor: pointer;
-  width: 120px;
-  height: 60px;
-  border-radius: 20px;
+  width: 80px;
+  height: 40px;
+  border-radius: 8px;
+  transition: all 0.5s ease;
+  font-size: 20px;
 }
 
-.container {
-  width: 400px;
-  height: 200px;
-  border: 1px solid black;
-  border-radius: 20px;
+.btnClear {
+  background: #1976d2;
+  align-self: flex-end;
+}
+
+.btnClear:hover {
+  background: rgba(0, 0, 0, 0);
+  color: #1976d2;
+  box-shadow: inset 0 0 0 2px #1976d2;
+}
+
+.btnSend {
+  background: #9c27b0;
+  margin-left: 4px;
+  flex: 0 0 auto;
+}
+
+.btnSend:hover {
+  background: rgba(0, 0, 0, 0);
+  color: #9c27b0;
+  box-shadow: inset 0 0 0 2px #9c27b0;
+}
+
+.input {
+  flex: 1 1 auto;
+  border: 1px solid #9c27b0;
+  height: 40px;
+  border-radius: 8px;
+  font-size: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  line-height: 38px;
+}
+
+.messagesForm {
+  display: flex;
+  width: 100%;
+  margin-top: 10px;
+  flex: 0 0 auto;
+}
+
+.messageBox {
+  flex: 1 1 auto;
+  overflow: auto;
+  margin: 10px 0;
+}
+
+.messageItem {
+  width: 100%;
+  border: 1px solid #888888;
+  height: 40px;
+  border-radius: 8px;
+  font-size: 20px;
+  margin-top: 4px;
+  color: #888888;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  flex: 1 1 auto;
+}
+
+.messageDate {
+  width: 25%;
+  margin-left: 10px;
+}
+
+.messageText {
+  width: 65%;
+  margin-left: 10px;
 }
